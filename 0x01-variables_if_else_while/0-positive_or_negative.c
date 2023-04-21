@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * The main function - the entry point of a program
- * @n: the variable to check
+ * main - the entry point of a program
  *
  * Return: If n is positif or negative and print it
  */
