@@ -3,6 +3,9 @@
 #include <stdio.h>
 /**
  * The main function - the entry point of a program
+ * @n: the variable to check
+ *
+ * Return: If n is positif or negative and print it
  */
 int main(void)
 {
