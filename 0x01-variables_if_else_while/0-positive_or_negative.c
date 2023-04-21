@@ -1,10 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-/** 
+/**
  * The main function - the entry point of a program
  */
 int main(void)
