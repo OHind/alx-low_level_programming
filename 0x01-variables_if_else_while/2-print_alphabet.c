@@ -8,9 +8,9 @@ int main(void)
 	char buffer[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for( i = 0; i < 26; i++)
+	for(i = 0; i < 26; i++)
 	{
-		putchar(buffer[i]);
+		putchar( buffer[i]);
 	}
 	putchar('\n');
 	return (0);
