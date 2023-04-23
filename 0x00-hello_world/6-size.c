@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - the entry point of teh program
- * return: always successful
+ * main - the entry point of the program
+ *
+ * Return: always successful
  */
 int main(void)
 {
@@ -11,7 +12,7 @@ int main(void)
 	long long lli;
 	float f;
 
-	printf("Size of a char: \n", sizeof(c));
+	printf("Size of a char: ", sizeof(char), "byte(s)");
 	printf("Size of an int: \n", sizeof(i));
 	printf("Size of a long int: \n", sizeof(li));
 	printf("Size of a long long int: \n", sizeof(lli));
