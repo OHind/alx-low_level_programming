@@ -1,19 +1,14 @@
 #include "main.h"
-
 /**
- * _isdigit - verify if a caracter is uper case
- * @c: integer to verify
- * Return: 1 is digit and 0 otherwise
+ * _isdigit - checks for digithood
+ * @c: character to checked for digit membership
+ *
+ * Return: 1 if digit, 0 if c is not digit
  */
 
 int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
-	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
