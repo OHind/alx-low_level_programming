@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void puts2 - print every other caracter
+ * puts2 - print every other caracter
  * @str: string to print
  * Return: Always 0;
  */
@@ -16,7 +16,7 @@ void puts2(char *str)
 	while (i < l)
 	{
 		_putchar(*(str + i));
-		i = i * 2;
+		i += 2;
 	}
 	_putchar('\n');
 }
