@@ -28,8 +28,8 @@ void puts_half(char *str)
 		while (i < l)
 		{
  			_putchar(*(str + i));
- 			i++;
- 		}
+			i++;
+		}
 	}
 	_putchar('\n');
 }
