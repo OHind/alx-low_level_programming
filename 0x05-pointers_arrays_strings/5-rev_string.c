@@ -10,18 +10,18 @@ void rev_string(char *s)
 	int j = 0;
 	char inter;
 
-	while (*(s + i) != '\n')
+	while (*(s + i) != '\0')
 	{
 		i++;
 	}
 	i--;
-	while ( j < i / 2)
+	while (j < i / 2)
 	{
 		inter = *(s + j);
 		*(s + j) = *(s + i);
 		*(s + i) = inter;
 		i--;
 		j++;
-	}	
+	}
 
 }
