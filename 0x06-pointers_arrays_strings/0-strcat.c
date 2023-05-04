@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - append desination string to a source string
+ * _strcat - append desination string to a source string
  * @dest: destination string
  * @src: source string
  * Return: concatenated string
@@ -20,12 +20,12 @@ char *_strcat(char *dest, char *src)
 	{
 		ldest++;
 	}
-	for (i = ldest; i < lsrc; i++)
+	for (i = 0; i < lsrc; i++)
 	{
-		*(dest + i) = *(src + j);
+		*(dest + ldest + i) = *(src + j);
 		j++;	
 	}
-	*(dest + i) = '\0';
+	*(dest + ldest + i) = '\0';
 	return (dest);
 
 		
