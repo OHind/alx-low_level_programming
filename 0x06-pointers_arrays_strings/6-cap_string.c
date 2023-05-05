@@ -9,7 +9,7 @@ char *cap_string(char *c)
 	int i = 0;
 	int p = 0;
 
-	for (i = 0; *(c + i) != '\0', i++)
+	for (i = 0; *(c + i) != '\0'; i++)
 	{
 		p = i - 1;
 		if (*(c + i) >= 97 && *(c + i) <= 122)
@@ -26,7 +26,7 @@ char *cap_string(char *c)
 				*(c + i) -= 32;
 			else if (*(c + p) == 59)
 				*(c + i) -= 32;
-			else if (*(c + p) == 123 || *(c + p)  125)
+			else if (*(c + p) == 123 || *(c + p) == 125)
 				*(c + i) -= 32;
 		}
 	}
