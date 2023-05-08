@@ -4,6 +4,7 @@
  * @s: the string to modify
  * @b: caracter to add
  * @n: Number of bits to be filled
+ * Return: the modified char
  */
 char *_memset(char *s, char b, unsigned int n)
 {
