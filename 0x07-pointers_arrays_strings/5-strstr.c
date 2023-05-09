@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 /**
  * _strstr - Find the new occurence of the substring
  * @haystack: the source string
