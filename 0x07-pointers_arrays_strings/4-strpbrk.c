@@ -1,5 +1,5 @@
 #include "main.h"
-DEFINE NULL 0
+#define NULL 0
 /**
  * _strpbrk - detect the first occurrence of any caracter of the argument
  * @s: the source string
