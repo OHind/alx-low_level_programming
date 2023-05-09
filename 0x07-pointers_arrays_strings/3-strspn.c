@@ -23,6 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 				num++;
 			}
 		}
+		if (fnum == num)
+		{
+			break;
+		}
 		i++;
 	}
 	return (fnum);
