@@ -14,7 +14,7 @@ int is_prime_number(int n)
 /**
  * check_prime - calculates if a number is prime recursively
  * @n: number to verify
- * @j: verify if numbers are the prime for n
+ * @i: verify if numbers are the prime for n
  * Return: 0 or 1
  */
 int check_prime(int n, int i)
