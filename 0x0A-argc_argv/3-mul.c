@@ -8,9 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
+int main(int argc, char *argv[])
+{
 	if (argc <= 2 || argc > 3)
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		return (1);
 	}
 	else
@@ -18,4 +20,5 @@ int main(int argc, char *argv[])
 		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 		return (0);
 	}
+}
 }
