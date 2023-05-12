@@ -5,11 +5,13 @@
  * @argv: array of all arguments
  * Return: 0;
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	for (i = 0; i < argc; i++)
+	int i = 0;
+	
+	for(i = 0; i < argc; i++)
 	{
-		printf ("the argument number %i is %s \n", argc, argv[i]);
+		printf ("%s\n", argc, argv[i]);
 	}
-	return 0;
+	return (0);
 }
