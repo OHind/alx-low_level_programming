@@ -8,6 +8,6 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("The name of the argument is %s \n", argv[0]);
+	printf("The name of the argument is %s \n", *argv);
 	return (0);
 }
