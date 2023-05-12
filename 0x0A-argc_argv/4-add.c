@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 		i = 1;
 		while (i < argc)
 		{
-			is_num = check_number(argv[i]);
+			is_num = check_int(argv[i]);
 			if (is_num == 1)
 			{
 				sum += atoi(argv[i]);
