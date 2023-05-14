@@ -3,7 +3,7 @@
  * _strstr - strstr function
  * @haystack: hay
  * @needle: needle
- * @return: return
+ * Return: return
  */
 char *_strstr(char *haystack, char *needle __attribute__((unused)))
 {

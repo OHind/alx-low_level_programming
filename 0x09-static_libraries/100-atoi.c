@@ -2,7 +2,7 @@
 /**
  * _atoi - atoi
  * @s: s
- * @Return: return value
+ * Return: return value
  */
 int _atoi(char *s __attribute__((unused)))
 {
