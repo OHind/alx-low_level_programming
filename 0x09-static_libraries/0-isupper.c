@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- * isupper - is upper
- * @c - argument
- * @Return: return value
+ * _isupper - is upper
+ * @c: argument
+ * Return: returns 1
  */
-int _isupper(int c)
+int _isupper(int c __attribute__((unused)))
 {
-
-	return (c);
+	return (1);
 }
