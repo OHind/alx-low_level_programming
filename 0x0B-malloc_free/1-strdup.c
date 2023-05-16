@@ -22,19 +22,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	if (len != 0)
+	for (i = 0; i < len; i++)
 	{
-		for (i = 0; i < len; i++)
-		{
-			*(ar + i) = *(str + i);
-		}
-		*(ar + i) = '\0';
-		return (ar);
+		*(ar + i) = *(str + i);
 	}
-	else
-	{
-		return (NULL);
-	}
-
+	*(ar + i) = '\0';
+	return (ar);
 
 }
