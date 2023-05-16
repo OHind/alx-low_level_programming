@@ -1,11 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *
+ * str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: Second string
+ * Return: the concatenated string
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len1 = 0, len2 = 0, i = 0;
+	unsigned int len1 = 0, len2 = 0, i = 0, len3 = 0;
 	char *ar;
 
 	if (s1 == NULL)
@@ -27,8 +30,9 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	len2 = i;
+	len3 = len1 + len2;
 	i = 0;
-	ar = (char*) malloc((len1 + len2) * sizeof(char) + 1);
+	ar = (char *) malloc(len3 * sizeof(char) + 1);
 	if (ar == NULL)
 	{
 		return (NULL);
@@ -37,9 +41,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		*(ar + i) = *(s1 + i);
 	}
-	for (i = len1; i < (len2 + len1); i++)
+	i = 0;
+	for (i = 0; i < len2; i++)
 	{
-		*(ar + i) = *(s2 + i);
+		*(ar + i + len1) = *(s2 + i);
 	}
 	*(ar + i) = '\0';
 	return (ar);
