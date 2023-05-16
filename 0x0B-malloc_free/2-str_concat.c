@@ -28,20 +28,16 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 	}
 	len3 = len1 + len2;
-	ar = (char *) malloc(len3 * sizeof(char) + 1);
+	ar = (char*) malloc(len3 * sizeof(char) + 1);
+
 	if (ar == NULL)
-	{
 		return (NULL);
-	}
+
 	for (i = 0; i < len1; i++)
-	{
-		*(ar + i) = *(s1 + i);
-	}
+		ar[i] = s1[i];
 	for (i = 0; i < len2; i++)
-	{
-		*(ar + i + len1) = *(s2 + i);
-	}
-	*(ar + i) = '\0';
+		ar[i + len1] = s2[i];
+
 	return (ar);
 
 }
