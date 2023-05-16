@@ -1,5 +1,5 @@
 #include "main.h"
-#define NULL 0
+#include <stdlib.h>
 /**
  * create_array - Create array
  * @size: number of array
@@ -10,11 +10,11 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
-	int i;
+	unsigned int i;
 
 	if (size != 0)
 	{
-		ar = malloc(size * sizeof(char));
+		ar = (char *) malloc(size * sizeof(char));
                 for (i = 0; i < size; i++)
                 {
                         *(ar + i) = c;
