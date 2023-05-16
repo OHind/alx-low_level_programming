@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len1 = 0, len2 = 0, i = 0;
+	unsigned int len1 = 0, len2 = 0, len3 = 0; i = 0;
 	char *ar;
 
 	if (s1 == NULL)
@@ -27,7 +27,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		len2++;
 	}
-	ar = (char *) malloc((len1 + len2) * sizeof(char) + 1);
+	len3 = len1 + len2
+	ar = (char *) malloc(len3 * sizeof(char) + 1);
 	if (ar == NULL)
 	{
 		return (NULL);
