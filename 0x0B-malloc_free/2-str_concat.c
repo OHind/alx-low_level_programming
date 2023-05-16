@@ -5,12 +5,16 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len1 = 0, len2 = 0, i = 0;
+	unsigned int len1 = 0, len2 = 0, i = 0, j = 0;
 	char *ar;
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	while (*(s1 + i) != '\0')
 	{
@@ -33,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		*(ar + i) = *(s1 + i);
 	}
-	for (i = len1; i < len2; i++)
+	for (i = len1; i < (len2 + len1); i++)
 	{
 		*(ar + i) = *(s2 + i);
 	}
