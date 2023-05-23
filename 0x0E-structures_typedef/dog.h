@@ -2,7 +2,7 @@
 #define DOG_H
 int _putchar(char c);
 /**
- * struct dog - dog
+ * struct dog_t - dog
  * @name: Name of the dog
  * @age: age of teh dog
  * @owner: Owner of the dog
@@ -15,6 +15,10 @@ struct dog
 	float age;
 	char *owner;
 };
+/**
+ * dog_t - typedef for struct dog
+ */
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 #endif
