@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	}
 	x = atoi(argv[1]);
 	y = atoi(argv[3]);
-	o = argv[2];
+	o = *argv[2];
 	if ((o == '/' || o == '%') && y == 0)
 	{
 		printf("Error\n");
