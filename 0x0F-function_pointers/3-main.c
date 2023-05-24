@@ -4,7 +4,7 @@
 /**
  * main - the entry point of a program
  * @argc: number of aruments
- * @argc: array of arguments
+ * @argv: array of arguments
  * Return: always success
  */
 int main(int argc, char *argv[])
