@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
 	int x, y, r;
 	int (*op)(int, int);
+	char o;
 
 	if (argc != 4)
 	{
@@ -25,6 +26,12 @@ int main(int argc, char *argv[])
 	}
 	x = atoi(argv[1]);
 	y = atoi(argv[3]);
+	o = argv[2];
+	if ((o == '/' || o == '%') && y == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	r = op(x, y);
 	printf("%d\n", r);
 	return (0);
