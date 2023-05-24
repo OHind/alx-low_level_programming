@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	x = atoi(argv[1]);
-	y = atoi(argv[2]);
+	y = atoi(argv[3]);
 	r = op(x, y);
 	printf("%d\n", r);
 	return (0);
