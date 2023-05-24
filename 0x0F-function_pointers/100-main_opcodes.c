@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - prints opcodes
  * @argc: number of arguments
@@ -33,4 +32,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%02hhx ", ar[i]);
 	}
+	return (0);
 }
