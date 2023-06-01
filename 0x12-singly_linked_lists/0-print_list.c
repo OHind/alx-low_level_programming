@@ -3,19 +3,20 @@
 #include <stdlib.h>
 /**
  * print_list - Print a list
- * h: The list to be printed
- * Retuen: The number of nodes
+ * @h: The list to be printed
+ * Return: The number of nodes
  */
 size_t print_list(const list_t *h)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; h != NULL; i++)
+	while (h != NULL)
 	{
 		if (h->str != NULL)
 			printf("[%d] %s\n", h->len, h->str);
 		else
-			printf("[%d] (nil)", 0);
+			printf("[%d] (nil)\n", 0);
+		i++;
 		h = h->next;
 	}
 	return (i);
