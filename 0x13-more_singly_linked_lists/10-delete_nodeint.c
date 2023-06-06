@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * delete_nodeint_at_index - deletes node at index of a linked list
  * @head: head of linked list
