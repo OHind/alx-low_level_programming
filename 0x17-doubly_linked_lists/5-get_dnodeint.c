@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include "lists.h"
 /**
- * dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+ * get_dnodeint_at_index - get a node
  * @head: the main list
  * @index: The index of the node
  * Return: the nth node
